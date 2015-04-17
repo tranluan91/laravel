@@ -6,3 +6,9 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
+node_modules/
+/public/bower/
+public/compass/.sass-cache/
+public/.sass-cache/
+.sass-cache/
+npm-debug.log
