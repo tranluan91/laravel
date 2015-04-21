@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return View::make('hello');
-});
+Route::get('/', 'HomeController@showWelcome');
+Route::resource('admin', 'AdminController');
+Route::get('/login', 'AdminController@getLogin');
+Route::post('/signin', 'AdminController@postSignin');
+Route::get('/dashboard', 'AdminController@getDashboard');
+Route::get('/logout', 'AdminController@getLogout');
+Route::get('/register', 'AdminController@getRegister');
